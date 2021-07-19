@@ -1,0 +1,6 @@
+Credentials cache: API:F034F094-88AD-4E95-82B3-D398DAE598BF
+        Principal: bmarques@42LISBOA.COM
+
+  Issued                Expires               Principal
+Jul  3 16:18:06 2021  Jul  4 02:18:06 2021  krbtgt/42LISBOA.COM@42LISBOA.COM
+Jul  3 16:18:08 2021  Jul  4 02:18:06 2021  HTTP/student-storage.42lisboa.com@42LISBOA.COM
