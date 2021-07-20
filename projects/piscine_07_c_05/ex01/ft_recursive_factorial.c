@@ -1,29 +1,16 @@
 #include <stdio.h>
 
-int ft_recursive(int aux, int nb)
+int	ft_recursive_factorial(int	nb)
 {
-    if (nb > 0)
-	{
-        aux *= nb--;
-        ft_recursive(aux, nb);   
-	}
-	else
-        return (aux);
-}
-
-int ft_recursive_factorial(int nb)
-{
-    if (nb < 0)
+	if (nb < 0)
 		return (0);
-	else if (nb <= 1) 
+	if (nb == 0)
 		return (1);
-	return(ft_recursive(1, nb));
+	else
+		return (nb * ft_recursive_factorial(nb - 1));
 }
-
-int main(void)
+/*
+int	main(void)
 {
-    int nb;
-
-    nb = 4;
-    printf("%d\n",ft_recursive_factorial(nb));
-}
+	printf("%d\n", ft_recursive_factorial(9));
+}*/

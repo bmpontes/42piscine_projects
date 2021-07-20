@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int		ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
-	int aux;
+	int	aux;
 
 	aux = 1;
 	if (nb < 0)
@@ -14,10 +14,7 @@ int		ft_iterative_factorial(int nb)
 	return (aux);
 }
 
-int main(void)
+/*int main(void)
 {
-    int nb;
-
-    nb = 10;
-    printf("%d\n", ft_iterative_factorial(nb));
-}
+    printf("%d\n", ft_iterative_factorial(10));
+}*/
