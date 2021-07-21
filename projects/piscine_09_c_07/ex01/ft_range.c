@@ -18,7 +18,7 @@ int *ft_range(int min, int max)
     }
     return(range);
 }
-
+/*
 int	main(void)
 {
 	int *test;
@@ -39,4 +39,4 @@ int	main(void)
 	}
 	if (size > 0)
 		printf("%d\n", test[size - 1]);
-}
+}*/

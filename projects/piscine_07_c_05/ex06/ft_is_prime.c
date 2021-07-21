@@ -2,20 +2,18 @@
 
 int	ft_is_prime(int nb)
 {
-	int	div;
 	int	c;
 
-	div = 0;
-	c = 1;
-	while (c <= nb)
+	c = 2;
+	if (nb < 2)
+		return (0);
+	while (c <= nb / 2)
 	{
 		if (nb % c == 0)
-			div++;
+			return (0);
 		c++;
 	}
-	if (div == 2)
-		return (1);
-	return (0);
+	return (1);
 }
 /*
 int main(void)

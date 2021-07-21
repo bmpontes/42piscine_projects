@@ -19,7 +19,7 @@ int ft_ultimate_range(int **range, int min, int max)
     *range = aux;
     return(c);
 }
-
+/*
 int	main(void)
 {
 	int *test;
@@ -39,4 +39,4 @@ int	main(void)
 	}
 	if (size > 0)
 		printf("%d\n", test[size - 1]);
-}
+}*/
