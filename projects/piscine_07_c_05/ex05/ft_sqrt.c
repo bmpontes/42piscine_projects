@@ -18,3 +18,8 @@ int	ft_sqrt(int nb)
 	}
 	return (0);
 }
+
+/*int main(void)
+{
+	printf("%i", ft_sqrt(9));
+}*/

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int	ft_find_next_prime(int nb)
+int	ft_is_prime(int nb)
 {
 	int	div;
 	int	c;
@@ -14,10 +14,18 @@ int	ft_find_next_prime(int nb)
 		c++;
 	}
 	if (div == 2)
-		return (nb);
-	else
-	{
-		nb++;
-		ft_find_next_prime(nb);
-	}
+		return (1);
+	return (0);
 }
+
+int	ft_find_next_prime(int nb)
+{
+	while (nb < 2147483647 && !ft_is_prime(nb))
+		nb++;
+	return (nb);
+}
+/*
+int main(void)
+{
+	printf("%i\n", ft_find_next_prime(5));
+}*/

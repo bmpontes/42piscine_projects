@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void	ft_str(char *str)
+void	ft_putstr(char *str)
 {
 	while (*str)
 		write(1, str++, 1);
@@ -49,7 +49,7 @@ int	main(int argc, char **argv)
 	n = 1;
 	while (n < argc)
 	{
-		ft_str(argv[n]);
+		ft_putstr(argv[n]);
 		n++;
 		write(1, "\n", 1);
 	}

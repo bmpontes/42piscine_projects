@@ -17,3 +17,8 @@ int	ft_is_prime(int nb)
 		return (1);
 	return (0);
 }
+/*
+int main(void)
+{
+	printf("%i\n", ft_is_prime(5));
+}*/

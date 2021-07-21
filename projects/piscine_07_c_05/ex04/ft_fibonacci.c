@@ -1,29 +1,17 @@
 #include <stdio.h>
 
-int	ft_recursive(int a, int b, int index)
-{
-	int	number;
-
-	if (index > 1)
-	{
-		number = a + b;
-		a = b;
-		b = number;
-		index--;
-		ft_recursive(a, b, index);
-	}
-	else
-		return (b);
-}
-
-int	ft_fibonacci(int index)
+int	ft_fibonacci(int	index)
 {
 	if (index < 0)
 		return (-1);
-	if (index == 0)
-		return (0);
-	if (index == 1)
-		return (1);
-	if (index > 1)
-		ft_recursive(0, 1, index);
+	if (index < 2)
+		return (index);
+	return (ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }
+
+/*int main(void)
+{
+	printf("0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ");
+   	printf("89, 144, 233, 377, 610, 987, 1597, 2584\n\n");
+	printf("Posicao: 1 - %i", ft_fibonacci(1));
+}*/
